@@ -8414,6 +8414,32 @@
 		(layer "Edge.Cuts")
 		(uuid "f53656d4-bd61-42fc-b0a9-9118fdb6423d")
 	)
+	(gr_text "10 8 6 4 2"
+		(at 162.56 76.708 0)
+		(layer "B.SilkS")
+		(uuid "4efa27eb-f236-42ff-9550-6d964b7d48be")
+		(effects
+			(font
+				(size 1.25 1.25)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "9 7  5  3 1"
+		(at 162.56 84.582 0)
+		(layer "B.SilkS")
+		(uuid "6dd8771d-022e-4dde-944d-19b88314bd07")
+		(effects
+			(font
+				(size 1.25 1.25)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(gr_text "Robotron VGA Adapter\nDesign (c)2024 M. Goegel\nRev 1"
 		(at 108.204 72.136 0)
 		(layer "F.SilkS")
@@ -8426,7 +8452,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "10 BSYNC\n6  INTENS\n4  VIDEO\n1,2 +5V\n3,5,7,8,9 GND"
+	(gr_text "10 BSYNC\n6  INTENS\n4  VIDEO\n1,2 +5V\n3	+3,3V\n5,7,8,9 GND"
 		(at 142.494 74.93 0)
 		(layer "F.SilkS")
 		(uuid "a31d0f44-d9e2-4e85-bd71-3750a7f25368")
