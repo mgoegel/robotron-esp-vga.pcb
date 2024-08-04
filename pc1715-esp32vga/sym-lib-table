@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "00-esp32vga")(type "KiCad")(uri "${KIPRJMOD}/00-esp32vga.kicad_sym")(options "")(descr ""))
+)
