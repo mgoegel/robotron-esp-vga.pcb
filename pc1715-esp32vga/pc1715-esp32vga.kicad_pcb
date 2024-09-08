@@ -9000,10 +9000,34 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "K"
+		(at 133.4 118.9 90)
+		(layer "F.SilkS")
+		(uuid "772bf227-0eba-47fc-ac18-d7c17fe43758")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "Robotron VGA Adapter\nDesign (c)2024 M. Goegel\nRev 2"
 		(at 75.3 126.1 0)
 		(layer "F.SilkS")
 		(uuid "8c903d65-44b9-426a-8d26-bdccf68ff0be")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "JLCJLCJLCJLC"
+		(at 143.55 102.1 0)
+		(layer "F.SilkS")
+		(uuid "9e763cff-5889-4c61-8e45-43aaab3f3eb5")
 		(effects
 			(font
 				(size 1 1)
