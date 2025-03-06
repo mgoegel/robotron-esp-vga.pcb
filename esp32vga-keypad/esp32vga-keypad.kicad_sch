@@ -1,13 +1,22 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "abc33361-8eaa-43b9-9883-08591ac4e9a3")
 	(paper "A4")
+	(title_block
+		(title "ESP32S3 ROBOTRON VGA ADAPTER - KEYPAD")
+		(date "2025-03-04")
+		(rev "2")
+		(company "Mario Goegel")
+		(comment 1 "2025-01-30 footprints updated, bugfix PCB")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_02x05_Odd_Even"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -74,30 +83,19 @@
 			)
 			(symbol "Conn_02x05_Odd_Even_1_1"
 				(rectangle
-					(start -1.27 -4.953)
-					(end 0 -5.207)
+					(start -1.27 6.35)
+					(end 3.81 -6.35)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
+					(start -1.27 5.207)
+					(end 0 4.953)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -118,8 +116,8 @@
 					)
 				)
 				(rectangle
-					(start -1.27 5.207)
-					(end 0 4.953)
+					(start -1.27 0.127)
+					(end 0 -0.127)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -129,19 +127,8 @@
 					)
 				)
 				(rectangle
-					(start -1.27 6.35)
-					(end 3.81 -6.35)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start 3.81 -4.953)
-					(end 2.54 -5.207)
+					(start -1.27 -2.413)
+					(end 0 -2.667)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -151,8 +138,8 @@
 					)
 				)
 				(rectangle
-					(start 3.81 -2.413)
-					(end 2.54 -2.667)
+					(start -1.27 -4.953)
+					(end 0 -5.207)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -162,8 +149,8 @@
 					)
 				)
 				(rectangle
-					(start 3.81 0.127)
-					(end 2.54 -0.127)
+					(start 3.81 5.207)
+					(end 2.54 4.953)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -184,8 +171,30 @@
 					)
 				)
 				(rectangle
-					(start 3.81 5.207)
-					(end 2.54 4.953)
+					(start 3.81 0.127)
+					(end 2.54 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 -2.413)
+					(end 2.54 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 -4.953)
+					(end 2.54 -5.207)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -213,42 +222,6 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 -5.08 180)
-					(length 3.81)
-					(name "Pin_10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 5.08 180)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_3"
@@ -259,24 +232,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -303,24 +258,6 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 0 180)
-					(length 3.81)
-					(name "Pin_6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_7"
@@ -331,6 +268,78 @@
 						)
 					)
 					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 5.08 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -357,16 +366,16 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at 7.62 -5.08 180)
 					(length 3.81)
-					(name "Pin_9"
+					(name "Pin_10"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -375,11 +384,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:LED"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -447,10 +461,22 @@
 			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -471,7 +497,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -483,22 +509,10 @@
 				)
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -544,9 +558,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -665,24 +682,29 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "Mechanical:MountingHole"
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
+				(hide yes)
 			)
-			(exclude_from_sim no)
-			(in_bom yes)
+			(exclude_from_sim yes)
+			(in_bom no)
 			(on_board yes)
 			(property "Reference" "H"
-				(at 0 5.08 0)
+				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -707,7 +729,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Mounting Hole without connection"
+			(property "Description" "Mounting Hole with connection"
 				(at 0 0 0)
 				(effects
 					(font
@@ -725,7 +747,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "MountingHole*"
+			(property "ki_fp_filters" "MountingHole*Pad*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -734,9 +756,9 @@
 					(hide yes)
 				)
 			)
-			(symbol "MountingHole_0_1"
+			(symbol "MountingHole_Pad_0_1"
 				(circle
-					(center 0 0)
+					(center 0 1.27)
 					(radius 1.27)
 					(stroke
 						(width 1.27)
@@ -747,11 +769,36 @@
 					)
 				)
 			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
 		)
 		(symbol "Switch:SW_Push"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -832,10 +879,9 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
-					)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
 					(stroke
 						(width 0)
 						(type default)
@@ -844,9 +890,10 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -892,12 +939,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3.3V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -969,7 +1021,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -981,7 +1033,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1012,12 +1064,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1108,13 +1165,26 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(junction
+		(at 158.75 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "00654027-ac28-443a-b3f2-73baf042384b")
 	)
 	(junction
 		(at 64.77 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "042bf884-fa02-4ab6-909f-d7a7981425f2")
+	)
+	(junction
+		(at 158.75 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2fe37a02-e610-430e-8c67-aed7f3b2fddd")
 	)
 	(junction
 		(at 121.92 72.39)
@@ -1139,6 +1209,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6e9c749e-30c3-444f-aedf-9f16b39dfb0f")
+	)
+	(junction
+		(at 158.75 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a9f21055-55c0-4e69-8615-c5bd4f865994")
 	)
 	(junction
 		(at 121.92 54.61)
@@ -1232,6 +1308,26 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 55.88) (xy 158.75 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57cb14f6-9f13-4c6f-8444-dd934b77b90a")
+	)
+	(wire
+		(pts
+			(xy 163.83 40.64) (xy 158.75 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c853934-8aa5-4dcd-8f40-6fed6dc466bf")
+	)
+	(wire
+		(pts
 			(xy 54.61 60.96) (xy 60.96 60.96)
 		)
 		(stroke
@@ -1239,6 +1335,16 @@
 			(type default)
 		)
 		(uuid "60896715-049c-49b7-bde6-4c1c3ac4aaf6")
+	)
+	(wire
+		(pts
+			(xy 158.75 55.88) (xy 163.83 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "663c40be-130c-419e-9f3a-7fc68142d6cb")
 	)
 	(wire
 		(pts
@@ -1269,6 +1375,16 @@
 			(type default)
 		)
 		(uuid "772c0491-678c-48ba-8273-cd802d28f664")
+	)
+	(wire
+		(pts
+			(xy 158.75 48.26) (xy 158.75 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e03d1e7-1279-4e25-ba4b-b303996dafd9")
 	)
 	(wire
 		(pts
@@ -1322,6 +1438,26 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 48.26) (xy 163.83 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "922577d7-96a6-4cf4-9583-a27431babd03")
+	)
+	(wire
+		(pts
+			(xy 158.75 63.5) (xy 158.75 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "923eea5a-c47d-49a6-ba48-3b3e8e88d768")
+	)
+	(wire
+		(pts
 			(xy 121.92 31.75) (xy 121.92 45.72)
 		)
 		(stroke
@@ -1349,6 +1485,16 @@
 			(type default)
 		)
 		(uuid "9e760e99-a3ca-4e2a-8e48-d6a7611bd2fb")
+	)
+	(wire
+		(pts
+			(xy 158.75 63.5) (xy 163.83 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae07cfe1-75e3-4dd4-9625-65b7aa8a0ba2")
 	)
 	(wire
 		(pts
@@ -1412,6 +1558,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 40.64) (xy 158.75 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e734bee3-e8cc-427e-8cb9-c8233def555a")
+	)
+	(wire
+		(pts
 			(xy 111.76 72.39) (xy 96.52 72.39)
 		)
 		(stroke
@@ -1442,7 +1598,6 @@
 	)
 	(label "K_UP"
 		(at 69.85 53.34 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1453,7 +1608,6 @@
 	)
 	(label "K_DOWN"
 		(at 96.52 72.39 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1464,7 +1618,6 @@
 	)
 	(label "K_RIGHT"
 		(at 96.52 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1475,7 +1628,6 @@
 	)
 	(label "L_SYNC"
 		(at 93.98 125.73 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1486,7 +1638,6 @@
 	)
 	(label "L_STAT"
 		(at 69.85 55.88 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1497,7 +1648,6 @@
 	)
 	(label "L_SYNC"
 		(at 26.67 55.88 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1508,7 +1658,6 @@
 	)
 	(label "RST"
 		(at 96.52 31.75 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1519,7 +1668,6 @@
 	)
 	(label "K_RIGHT"
 		(at 26.67 50.8 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1530,7 +1678,6 @@
 	)
 	(label "K_DOWN"
 		(at 69.85 50.8 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1541,7 +1688,6 @@
 	)
 	(label "K_LEFT"
 		(at 26.67 53.34 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1552,7 +1698,6 @@
 	)
 	(label "L_STAT"
 		(at 93.98 114.3 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1563,7 +1708,6 @@
 	)
 	(label "K_UP"
 		(at 96.52 54.61 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1574,7 +1718,6 @@
 	)
 	(label "K_LEFT"
 		(at 96.52 45.72 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1585,7 +1728,6 @@
 	)
 	(label "RST"
 		(at 69.85 58.42 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1595,8 +1737,8 @@
 		(uuid "fa90f37b-f6df-4a4d-a27c-0c5680b7938a")
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 163.83 50.8 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 163.83 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1605,7 +1747,7 @@
 		(fields_autoplaced yes)
 		(uuid "0279270c-ee88-4dd9-a77f-8a9569a129e6")
 		(property "Reference" "H2"
-			(at 166.37 49.5878 0)
+			(at 166.37 43.2378 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1614,7 +1756,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 166.37 52.0121 0)
+			(at 166.37 45.6621 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1623,7 +1765,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad"
-			(at 163.83 50.8 0)
+			(at 163.83 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1632,7 +1774,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 163.83 50.8 0)
+			(at 163.83 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1640,14 +1782,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 163.83 50.8 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 163.83 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "215884ae-3ec0-4925-ab9f-04d7334ed475")
 		)
 		(instances
 			(project "esp32vga-keypad"
@@ -1750,7 +1895,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm"
+		(property "Footprint" "ESP32S3-VGA-KEYPAD:SW_Push_TS04_NO_6x6mm_H5.00_BKXXX_SMT"
 			(at 116.84 40.64 0)
 			(effects
 				(font
@@ -1793,8 +1938,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 163.83 45.72 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 163.83 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1803,7 +1948,7 @@
 		(fields_autoplaced yes)
 		(uuid "1a175b2b-ff91-41e8-a2a4-4aa37d91755e")
 		(property "Reference" "H1"
-			(at 166.37 44.5078 0)
+			(at 166.37 35.6178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1812,7 +1957,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 166.37 46.9321 0)
+			(at 166.37 38.0421 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1821,7 +1966,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad"
-			(at 163.83 45.72 0)
+			(at 163.83 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1830,7 +1975,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 163.83 45.72 0)
+			(at 163.83 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1838,14 +1983,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 163.83 45.72 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 163.83 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "3d517778-e603-437b-91ff-49a33de9fc4b")
 		)
 		(instances
 			(project "esp32vga-keypad"
@@ -1881,7 +2029,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm"
+		(property "Footprint" "ESP32S3-VGA-KEYPAD:SW_Push_TS04_NO_6x6mm_H5.00_BKXXX_SMT"
 			(at 116.84 26.67 0)
 			(effects
 				(font
@@ -1948,7 +2096,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm"
+		(property "Footprint" "ESP32S3-VGA-KEYPAD:SW_Push_TS04_NO_6x6mm_H5.00_BKXXX_SMT"
 			(at 116.84 58.42 0)
 			(effects
 				(font
@@ -2121,8 +2269,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 163.83 55.88 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 163.83 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2131,7 +2279,7 @@
 		(fields_autoplaced yes)
 		(uuid "50173eeb-e2d3-4dc3-b237-1b3ac8001ee0")
 		(property "Reference" "H3"
-			(at 166.37 54.6678 0)
+			(at 166.37 50.8578 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2140,7 +2288,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 166.37 57.0921 0)
+			(at 166.37 53.2821 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2149,7 +2297,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad"
-			(at 163.83 55.88 0)
+			(at 163.83 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2158,7 +2306,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 163.83 55.88 0)
+			(at 163.83 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2166,14 +2314,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 163.83 55.88 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 163.83 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "33193ab7-940e-486c-9332-58b515d62f27")
 		)
 		(instances
 			(project "esp32vga-keypad"
@@ -2253,7 +2404,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 163.83 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2263,7 +2414,7 @@
 		(fields_autoplaced yes)
 		(uuid "5feb5689-37da-4879-af7c-7734fc285f92")
 		(property "Reference" "H4"
-			(at 166.37 59.7478 0)
+			(at 166.37 58.4778 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2272,7 +2423,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 166.37 62.1721 0)
+			(at 166.37 60.9021 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2298,7 +2449,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 163.83 60.96 0)
 			(effects
 				(font
@@ -2306,6 +2457,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "3550f5e4-7c74-4008-a0bf-652eb13ce569")
 		)
 		(instances
 			(project "esp32vga-keypad"
@@ -2341,7 +2495,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm"
+		(property "Footprint" "ESP32S3-VGA-KEYPAD:SW_Push_TS04_NO_6x6mm_H5.00_BKXXX_SMT"
 			(at 116.84 49.53 0)
 			(effects
 				(font
@@ -2475,7 +2629,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical"
+		(property "Footprint" "Connector_IDC:IDC-Header_2x05_P2.54mm_Horizontal"
 			(at 49.53 55.88 0)
 			(effects
 				(font
@@ -2536,6 +2690,72 @@
 			(project "esp32vga-keypad"
 				(path "/abc33361-8eaa-43b9-9883-08591ac4e9a3"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 158.75 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9fc818be-0a92-4118-b455-56ad618e6e9f")
+		(property "Reference" "#PWR06"
+			(at 158.75 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 158.75 72.7131 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 158.75 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dd3b3651-9508-487c-9254-0b4a00f78636")
+		)
+		(instances
+			(project "esp32vga-keypad"
+				(path "/abc33361-8eaa-43b9-9883-08591ac4e9a3"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -2836,7 +3056,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm"
+		(property "Footprint" "ESP32S3-VGA-KEYPAD:SW_Push_TS04_NO_6x6mm_H5.00_BKXXX_SMT"
 			(at 116.84 67.31 0)
 			(effects
 				(font
@@ -2883,4 +3103,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

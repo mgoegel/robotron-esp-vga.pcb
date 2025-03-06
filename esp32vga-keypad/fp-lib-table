@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "ESP32S3-VGA-KEYPAD")(type "KiCad")(uri "${KIPRJMOD}/ESP32S3-VGA-KEYPAD.pretty")(options "")(descr ""))
+)

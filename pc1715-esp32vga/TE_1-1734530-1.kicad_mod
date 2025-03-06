@@ -1,7 +1,7 @@
 (footprint "TE_1-1734530-1"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at -10.732275 -6.682925 0)
@@ -25,18 +25,6 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "bed0b4fa-b7e6-4f9a-b781-ee6c6090408d")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
@@ -46,6 +34,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -58,6 +47,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -109,7 +99,7 @@
 			(width 0.4)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.SilkS")
 		(uuid "539ad039-154b-4043-affc-9dbc5992d37e")
 	)
@@ -222,6 +212,24 @@
 		)
 		(layer "F.Fab")
 		(uuid "8a4c1e69-6d9d-4f23-9dba-dc5f99025231")
+	)
+	(pad "0" thru_hole circle
+		(at -12.5 0)
+		(size 4.196 4.196)
+		(drill 3.18)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "0b8c94a6-d04e-47b5-b062-21684d38ef65")
+	)
+	(pad "0" thru_hole circle
+		(at 12.5 0)
+		(size 4.196 4.196)
+		(drill 3.18)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "f19c476a-b187-49c2-8a56-23328ee6895f")
 	)
 	(pad "1" thru_hole rect
 		(at 4.315 -2.54)
@@ -358,22 +366,16 @@
 		(solder_mask_margin 0.102)
 		(uuid "9359a86f-0b69-45f8-9abe-bb76efc0c207")
 	)
-	(pad "SH1" thru_hole circle
-		(at -12.5 0)
-		(size 4.196 4.196)
-		(drill 3.18)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(solder_mask_margin 0.102)
-		(uuid "0b8c94a6-d04e-47b5-b062-21684d38ef65")
-	)
-	(pad "SH2" thru_hole circle
-		(at 12.5 0)
-		(size 4.196 4.196)
-		(drill 3.18)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(solder_mask_margin 0.102)
-		(uuid "f19c476a-b187-49c2-8a56-23328ee6895f")
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3d/1-1734530-1.--3DModel-STEP-56544.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
 	)
 )

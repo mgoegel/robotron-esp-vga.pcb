@@ -1,0 +1,30 @@
+Drill report for pc1715-esp32vga.kicad_pcb
+Created on 2025-03-02T13:03:47+0100
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L1 :  B.Cu                      back
+
+
+Drill file 'pc1715-esp32vga-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0,400mm  0,0157"  (97 holes)
+    T2  0,600mm  0,0236"  (4 holes)  (with 4 slots)
+    T3  0,950mm  0,0374"  (4 holes)
+    T4  1,000mm  0,0394"  (51 holes)
+    T5  1,190mm  0,0469"  (15 holes)
+    T6  2,300mm  0,0906"  (2 holes)
+    T7  3,180mm  0,1252"  (2 holes)
+    T8  3,200mm  0,1260"  (4 holes)
+
+    Total plated holes count 179
+
+
+Drill file 'pc1715-esp32vga-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  0,650mm  0,0256"  (2 holes)
+
+    Total unplated holes count 2
